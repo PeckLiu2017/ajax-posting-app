@@ -3,12 +3,55 @@
     <%= post.user.display_name %>
   </div>
   <div class="panel-body">
+    <span id="post-thumbsup-<%= post.id %>" class="label label-success"><%= post.likes.count %> 👍</span>
     <%= post.content %>
+    <div class="text-right">
+      <p class="text-right" style="display:inline-block;">
+    <span id="post-like-<%= post.id %>">
+      <%= render :partial => "like", :locals => { :post => post } %>
+    </span>
 
+        </p>
     <% if current_user && post.user == current_user %>
-      <p class="text-right">
-        <%= link_to "Delete", post_path(post), :method => :delete, :class => "btn btn-danger", :remote => true %>
+      <p class="text-right" style="display:inline-block;">
+        <%#= link_to "Delete", post_path(post), :method => :delete, :class => "btn btn-danger", :remote => true %>
+        <!-- 自行绑定事件 -->
+        <%= link_to "Delete", post_path(post), :class => "delete-post btn btn-danger" %>
       </p>
     <% end %>
   </div>
 </div>
+</div>
+<script type="text/javascript">
+  $(".delete-post").click(function (e) {
+    e.preventDefault();
+    var url = $(this).attr('href')
+
+    $.ajax({
+      url: url,
+      method: 'DELETE'
+      dataType: 'json'// 要求服务器回传 json
+      success: function(data){   // data 就是服务器回传的 JSON 资料
+         $("#post-" + data["id"]).remove();
+      }
+    })
+  })
+</script>
+<!-- <script type="text/javascript">
+   // 这会绑 click 事件到所有有 `.delete-post` class 的元素上，也就是所有的删除按钮
+   $(".delete-post").click(function(evt){
+     // `evt` 是浏览器的事件物件，evt.preventDefault(); 会终止这个元素的默认行为：
+     // 超连结 a 的默认行为是跳到下一页，如果没有这行的话，送出 ajax 后会跳去 show page
+     evt.preventDefault();
+     // this 是个特别的变量，代表触发事件的元素。使用 attr 可以读取元素的属性，这里要拿到超连结的网址
+     var url = $(this).attr("href");
+
+     // 送出 Ajax
+     $.ajax({
+       url: url,
+       method: 'DELETE',
+       dataType: 'script' // 要求服务器回传 javascript
+     })
+   })
+
+</script> -->

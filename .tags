@@ -1,9 +1,15 @@
 * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets	/Users/peckliu/project/ajax-posting-app/app/assets/stylesheets/application.scss	/^ * Any CSS and SCSS file within this directory, lib\/assets\/stylesheets, vendor\/assets\/stylesheets,$/;"	function	line:5
+CreateLikes	/Users/peckliu/project/ajax-posting-app/db/migrate/20170808132601_create_likes.rb	/^class CreateLikes < ActiveRecord::Migration[5.0]$/;"	class	line:1
+change	/Users/peckliu/project/ajax-posting-app/db/migrate/20170808132601_create_likes.rb	/^  def change$/;"	method	line:2	class:CreateLikes
+Like	/Users/peckliu/project/ajax-posting-app/app/models/like.rb	/^class Like < ApplicationRecord$/;"	class	line:1
 Post	/Users/peckliu/project/ajax-posting-app/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
+find_like	/Users/peckliu/project/ajax-posting-app/app/models/post.rb	/^   def find_like(user)$/;"	method	line:8	class:Post
 User	/Users/peckliu/project/ajax-posting-app/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:1
-display_name	/Users/peckliu/project/ajax-posting-app/app/models/user.rb	/^  def display_name$/;"	method	line:8	class:User
+display_name	/Users/peckliu/project/ajax-posting-app/app/models/user.rb	/^  def display_name$/;"	method	line:11	class:User
 PostsController	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
 index	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:4	class:PostsController
 create	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def create$/;"	method	line:8	class:PostsController
 destroy	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def destroy$/;"	method	line:16	class:PostsController
-post_params	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def post_params$/;"	method	line:26	class:PostsController
+like	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def like$/;"	method	line:25	class:PostsController
+unlike	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def unlike$/;"	method	line:34	class:PostsController
+post_params	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def post_params$/;"	method	line:44	class:PostsController
