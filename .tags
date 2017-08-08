@@ -4,12 +4,16 @@ change	/Users/peckliu/project/ajax-posting-app/db/migrate/20170808132601_create_
 Like	/Users/peckliu/project/ajax-posting-app/app/models/like.rb	/^class Like < ApplicationRecord$/;"	class	line:1
 Post	/Users/peckliu/project/ajax-posting-app/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
 find_like	/Users/peckliu/project/ajax-posting-app/app/models/post.rb	/^   def find_like(user)$/;"	method	line:8	class:Post
+AddFlagToPosts	/Users/peckliu/project/ajax-posting-app/db/migrate/20170808161554_add_flag_to_posts.rb	/^class AddFlagToPosts < ActiveRecord::Migration[5.0]$/;"	class	line:1
+change	/Users/peckliu/project/ajax-posting-app/db/migrate/20170808161554_add_flag_to_posts.rb	/^  def change$/;"	method	line:2	class:AddFlagToPosts
 User	/Users/peckliu/project/ajax-posting-app/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:1
 display_name	/Users/peckliu/project/ajax-posting-app/app/models/user.rb	/^  def display_name$/;"	method	line:11	class:User
+is_admin?	/Users/peckliu/project/ajax-posting-app/app/models/user.rb	/^  def is_admin?$/;"	method	line:16	class:User
 PostsController	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
 index	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:4	class:PostsController
 create	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def create$/;"	method	line:19	class:PostsController
 destroy	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def destroy$/;"	method	line:27	class:PostsController
 like	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def like$/;"	method	line:35	class:PostsController
 unlike	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def unlike$/;"	method	line:44	class:PostsController
-post_params	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def post_params$/;"	method	line:54	class:PostsController
+toggle_flag	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def toggle_flag$/;"	method	line:52	class:PostsController
+post_params	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def post_params$/;"	method	line:68	class:PostsController

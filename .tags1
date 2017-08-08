@@ -4,3 +4,11 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+PostsController	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
+index	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:4	class:PostsController
+create	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def create$/;"	method	line:19	class:PostsController
+destroy	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def destroy$/;"	method	line:27	class:PostsController
+like	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def like$/;"	method	line:35	class:PostsController
+unlike	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def unlike$/;"	method	line:44	class:PostsController
+toggle_flag	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def toggle_flag$/;"	method	line:52	class:PostsController
+post_params	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def post_params$/;"	method	line:68	class:PostsController
