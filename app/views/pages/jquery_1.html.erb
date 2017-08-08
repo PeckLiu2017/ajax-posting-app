@@ -1,5 +1,9 @@
 <p>
   <a id="my-click">Click Me</a>
+  <a id="prepend">prepend</a>
+  <a id="append">append</a>
+  <a id="before">before</a>
+  <a id="after">after</a>
 </p>
 
 <div id="foo" style="border: 1px solid red;">
@@ -10,4 +14,17 @@
   $("#my-click").click(function(){
     $("#foo").html('<h1>zoo</h1>');
   })
+  $("#prepend").click(function(){
+    $("#foo").prepend('<h1>zoo</h1>');
+  })
+  $("#append").click(function(){
+    $("#foo").append('<h1>zoo</h1>');
+  })
+  $("#before").click(function(){
+    $("#foo").before('<h1>zoo</h1>');
+  })
+  $("#after").click(function(){
+    $("#foo").after('<h1>zoo</h1>');
+  })
+
 </script>

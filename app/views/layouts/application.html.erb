@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <%= render 'common/navbar'%>
+    <br>
+    <%#= render "common/navbar" %>
     <%= link_to "jQuery 练习一", jquery_first_path %> |
     <%= link_to "jQuery 练习二", jquery_2_path %> |
     <%= link_to "jQuery 练习三", jquery_3_path %> |
@@ -18,11 +21,3 @@
     <%= yield %>
   </body>
 </html>
-
-<!-- <script type="text/javascript">
-  $(function () {
-    if (parseFloat($('.quiz-detail-option-progress').text())>2) {
-      $('.quiz-detail-option-progress').click()
-    }
-  })
-</script> -->

@@ -1,0 +1,9 @@
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets	/Users/peckliu/project/ajax-posting-app/app/assets/stylesheets/application.scss	/^ * Any CSS and SCSS file within this directory, lib\/assets\/stylesheets, vendor\/assets\/stylesheets,$/;"	function	line:5
+Post	/Users/peckliu/project/ajax-posting-app/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
+User	/Users/peckliu/project/ajax-posting-app/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:1
+display_name	/Users/peckliu/project/ajax-posting-app/app/models/user.rb	/^  def display_name$/;"	method	line:8	class:User
+PostsController	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
+index	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:4	class:PostsController
+create	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def create$/;"	method	line:8	class:PostsController
+destroy	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def destroy$/;"	method	line:16	class:PostsController
+post_params	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def post_params$/;"	method	line:26	class:PostsController
