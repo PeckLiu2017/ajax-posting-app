@@ -22,21 +22,6 @@
   </div>
 </div>
 </div>
-<script type="text/javascript">
-  $(".delete-post").click(function (e) {
-    e.preventDefault();
-    var url = $(this).attr('href')
-
-    $.ajax({
-      url: url,
-      method: 'DELETE'
-      dataType: 'json'// 要求服务器回传 json
-      success: function(data){   // data 就是服务器回传的 JSON 资料
-         $("#post-" + data["id"]).remove();
-      }
-    })
-  })
-</script>
 <!-- <script type="text/javascript">
    // 这会绑 click 事件到所有有 `.delete-post` class 的元素上，也就是所有的删除按钮
    $(".delete-post").click(function(evt){

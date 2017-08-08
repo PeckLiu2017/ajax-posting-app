@@ -8,8 +8,8 @@ User	/Users/peckliu/project/ajax-posting-app/app/models/user.rb	/^class User < A
 display_name	/Users/peckliu/project/ajax-posting-app/app/models/user.rb	/^  def display_name$/;"	method	line:11	class:User
 PostsController	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
 index	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:4	class:PostsController
-create	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def create$/;"	method	line:8	class:PostsController
-destroy	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def destroy$/;"	method	line:16	class:PostsController
-like	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def like$/;"	method	line:25	class:PostsController
-unlike	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def unlike$/;"	method	line:34	class:PostsController
-post_params	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def post_params$/;"	method	line:44	class:PostsController
+create	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def create$/;"	method	line:19	class:PostsController
+destroy	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def destroy$/;"	method	line:27	class:PostsController
+like	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def like$/;"	method	line:35	class:PostsController
+unlike	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def unlike$/;"	method	line:44	class:PostsController
+post_params	/Users/peckliu/project/ajax-posting-app/app/controllers/posts_controller.rb	/^   def post_params$/;"	method	line:54	class:PostsController
